@@ -1,4 +1,4 @@
-# ATHExtensions
+# ![alt text] (https://raw.githubusercontent.com/attheodo/ATHExtensions/master/misc/logo.png "ATHExtensions") ATHExtensions
 
 [![CI Status](http://img.shields.io/travis/attheodo/ATHExtensions.svg?style=flat)](https://travis-ci.org/attheodo/ATHExtensions)
 [![Version](https://img.shields.io/cocoapods/v/ATHExtensions.svg?style=flat)](http://cocoapods.org/pods/ATHExtensions)
