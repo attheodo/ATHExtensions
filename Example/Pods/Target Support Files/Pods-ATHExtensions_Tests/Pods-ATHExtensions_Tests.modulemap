@@ -1,0 +1,6 @@
+framework module Pods_ATHExtensions_Tests {
+  umbrella header "Pods-ATHExtensions_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - ATHExtensions (0.1.0)
+
+DEPENDENCIES:
+  - ATHExtensions (from `../`)
+
+EXTERNAL SOURCES:
+  ATHExtensions:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ATHExtensions: 75e31a4a6e69c8c5b6b74bff15a39e8843476a03
+
+PODFILE CHECKSUM: f45842509222c1b99b21bcb470797fb1710d9845
+
+COCOAPODS: 1.0.0

@@ -1,0 +1,6 @@
+framework module ATHExtensions {
+  umbrella header "ATHExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}
