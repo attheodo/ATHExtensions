@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ATHExtensions_Example' do
+  pod 'ATHExtensions', :path => '../'
+
+  target 'ATHExtensions_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
