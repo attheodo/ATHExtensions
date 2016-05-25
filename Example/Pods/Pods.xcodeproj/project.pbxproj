@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		153E5379F6FCDD6144144DE9DC29B7FB /* ATHExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A46512519B77E4A60D218C6079D63D35 /* ATHExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F1C4682D45CA6AEDC298C67D29FF24D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		4D82458D1CF6189100BDD83E /* ATHExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D82458C1CF6189100BDD83E /* ATHExtensions.swift */; };
 		508414E3A3BCC28998AE23E4D46081E5 /* Pods-ATHExtensions_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BF519F409AABE0762C21375DFD0FB2 /* Pods-ATHExtensions_Example-dummy.m */; };
 		77B558EE02003E236EA56B76B2AE064D /* Pods-ATHExtensions_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20320CD3EE46F797FCDE68A714CB4F69 /* Pods-ATHExtensions_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85C5505C05445DF0F630EE67FC4C00CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		8D00EF477C6DA7EDD31BEB775648F5A0 /* ATHExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF7FB4E410F47E48918AA9E77409CEE /* ATHExtensions-dummy.m */; };
 		958DF124F3970F6DB4E8641AA3F5E589 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		C261E14C46F5CA1124517198AB038730 /* Pods-ATHExtensions_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0EA075C9C08A44A015B9FB04E365FD /* Pods-ATHExtensions_Tests-dummy.m */; };
-		C89529614F826919BFEA6BFFE192751F /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976EBD52FC206D3DCE1E56A2F88FC5C4 /* ReplaceMe.swift */; };
 		D1F142ED469324B35FF49AB8C52DDA4C /* Pods-ATHExtensions_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE012BDF4FB64EC91EABBC79ED13E61 /* Pods-ATHExtensions_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -39,6 +39,7 @@
 		440A290333AF86FFCF801F12F90BB264 /* Pods-ATHExtensions_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ATHExtensions_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		44A2A71B613595B2771D6678ED51998F /* ATHExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ATHExtensions-prefix.pch"; sourceTree = "<group>"; };
 		46EDF7B76073BBD268F95BCDC6E02B9F /* Pods-ATHExtensions_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ATHExtensions_Tests.modulemap"; sourceTree = "<group>"; };
+		4D82458C1CF6189100BDD83E /* ATHExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATHExtensions.swift; sourceTree = "<group>"; };
 		554B6EB119A26BA561034AB6C053355B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63D3521409F9742D350A7B84E00FD890 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AF7FB4E410F47E48918AA9E77409CEE /* ATHExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ATHExtensions-dummy.m"; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		8E3041555EFB9865A5645FBCBC43BCCD /* Pods-ATHExtensions_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ATHExtensions_Example-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		947C36A47F20149A3453313EBB840F71 /* Pods-ATHExtensions_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ATHExtensions_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		976EBD52FC206D3DCE1E56A2F88FC5C4 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		991A770FD6D8E7BDAB8646E173E5D29D /* ATHExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ATHExtensions.xcconfig; sourceTree = "<group>"; };
 		9E86834914CF9B20705E46EEB4D1C05F /* Pods-ATHExtensions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ATHExtensions_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A46512519B77E4A60D218C6079D63D35 /* ATHExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ATHExtensions-umbrella.h"; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		0C2BE57A814A60AC64630616DDA0920B /* ATHExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				0E8325E314886C5F4998AB224BEC8738 /* Classes */,
+				4D82458C1CF6189100BDD83E /* ATHExtensions.swift */,
 			);
 			path = ATHExtensions;
 			sourceTree = "<group>";
@@ -106,14 +106,6 @@
 				4B096EC7F39553EE3579573EE25CA08E /* ATHExtensions */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		0E8325E314886C5F4998AB224BEC8738 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				976EBD52FC206D3DCE1E56A2F88FC5C4 /* ReplaceMe.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		10EA40B353A0CD79688CFB8C7B50A73B /* Support Files */ = {
@@ -346,7 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D00EF477C6DA7EDD31BEB775648F5A0 /* ATHExtensions-dummy.m in Sources */,
-				C89529614F826919BFEA6BFFE192751F /* ReplaceMe.swift in Sources */,
+				4D82458D1CF6189100BDD83E /* ATHExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 991A770FD6D8E7BDAB8646E173E5D29D /* ATHExtensions.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -541,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 991A770FD6D8E7BDAB8646E173E5D29D /* ATHExtensions.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
