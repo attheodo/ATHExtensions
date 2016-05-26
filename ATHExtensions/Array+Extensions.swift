@@ -62,7 +62,7 @@ extension Array where Element: Equatable {
      - parameter object: The object of which all the occurences to be removed
      from the collection
     */
-    public mutating func removeObjects(object: Element) {
+    public mutating func removeAllOccurencesOfObject(object: Element) {
       
         for i in self.indexesOf(object).reverse() {
             self.removeAtIndex(i)
