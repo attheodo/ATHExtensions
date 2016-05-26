@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/ATHExtensions.svg?style=flat)](http://cocoapods.org/pods/ATHExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/ATHExtensions.svg?style=flat)](http://cocoapods.org/pods/ATHExtensions)
 
-![Logo] (https://raw.githubusercontent.com/attheodo/ATHExtensions/master/misc/logo.png)
+![Logo](https://raw.githubusercontent.com/attheodo/ATHExtensions/master/misc/logo.png)
 
 A collection of UIKit, Foundation and other framework extensions that I usually use in my projects. 
 
