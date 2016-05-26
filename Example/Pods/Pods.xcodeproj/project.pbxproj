@@ -10,6 +10,12 @@
 		153E5379F6FCDD6144144DE9DC29B7FB /* ATHExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A46512519B77E4A60D218C6079D63D35 /* ATHExtensions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F1C4682D45CA6AEDC298C67D29FF24D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		4D82458D1CF6189100BDD83E /* ATHExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D82458C1CF6189100BDD83E /* ATHExtensions.swift */; };
+		4DFE39BF1CF6F22600996F0E /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFE39BE1CF6F22600996F0E /* Array+Extensions.swift */; };
+		4DFE39C11CF6F56A00996F0E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFE39C01CF6F56A00996F0E /* UIColor+Extensions.swift */; };
+		4DFE39C31CF6F81100996F0E /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFE39C21CF6F81100996F0E /* Dictionary+Extensions.swift */; };
+		4DFE39C51CF6FBA000996F0E /* NSMutableAttributeString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFE39C41CF6FBA000996F0E /* NSMutableAttributeString+Extensions.swift */; };
+		4DFE39C71CF6FC7D00996F0E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFE39C61CF6FC7D00996F0E /* UIViewController+Extensions.swift */; };
+		4DFE39C91CF700C800996F0E /* NSNotificationCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFE39C81CF700C800996F0E /* NSNotificationCenter+Extensions.swift */; };
 		508414E3A3BCC28998AE23E4D46081E5 /* Pods-ATHExtensions_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BF519F409AABE0762C21375DFD0FB2 /* Pods-ATHExtensions_Example-dummy.m */; };
 		77B558EE02003E236EA56B76B2AE064D /* Pods-ATHExtensions_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20320CD3EE46F797FCDE68A714CB4F69 /* Pods-ATHExtensions_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85C5505C05445DF0F630EE67FC4C00CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
@@ -40,6 +46,12 @@
 		44A2A71B613595B2771D6678ED51998F /* ATHExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ATHExtensions-prefix.pch"; sourceTree = "<group>"; };
 		46EDF7B76073BBD268F95BCDC6E02B9F /* Pods-ATHExtensions_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ATHExtensions_Tests.modulemap"; sourceTree = "<group>"; };
 		4D82458C1CF6189100BDD83E /* ATHExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATHExtensions.swift; sourceTree = "<group>"; };
+		4DFE39BE1CF6F22600996F0E /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		4DFE39C01CF6F56A00996F0E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		4DFE39C21CF6F81100996F0E /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
+		4DFE39C41CF6FBA000996F0E /* NSMutableAttributeString+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributeString+Extensions.swift"; sourceTree = "<group>"; };
+		4DFE39C61CF6FC7D00996F0E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		4DFE39C81CF700C800996F0E /* NSNotificationCenter+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotificationCenter+Extensions.swift"; sourceTree = "<group>"; };
 		554B6EB119A26BA561034AB6C053355B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63D3521409F9742D350A7B84E00FD890 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AF7FB4E410F47E48918AA9E77409CEE /* ATHExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ATHExtensions-dummy.m"; sourceTree = "<group>"; };
@@ -96,6 +108,12 @@
 			isa = PBXGroup;
 			children = (
 				4D82458C1CF6189100BDD83E /* ATHExtensions.swift */,
+				4DFE39BE1CF6F22600996F0E /* Array+Extensions.swift */,
+				4DFE39C01CF6F56A00996F0E /* UIColor+Extensions.swift */,
+				4DFE39C21CF6F81100996F0E /* Dictionary+Extensions.swift */,
+				4DFE39C61CF6FC7D00996F0E /* UIViewController+Extensions.swift */,
+				4DFE39C41CF6FBA000996F0E /* NSMutableAttributeString+Extensions.swift */,
+				4DFE39C81CF700C800996F0E /* NSNotificationCenter+Extensions.swift */,
 			);
 			path = ATHExtensions;
 			sourceTree = "<group>";
@@ -338,7 +356,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D00EF477C6DA7EDD31BEB775648F5A0 /* ATHExtensions-dummy.m in Sources */,
+				4DFE39BF1CF6F22600996F0E /* Array+Extensions.swift in Sources */,
+				4DFE39C31CF6F81100996F0E /* Dictionary+Extensions.swift in Sources */,
+				4DFE39C71CF6FC7D00996F0E /* UIViewController+Extensions.swift in Sources */,
+				4DFE39C91CF700C800996F0E /* NSNotificationCenter+Extensions.swift in Sources */,
 				4D82458D1CF6189100BDD83E /* ATHExtensions.swift in Sources */,
+				4DFE39C11CF6F56A00996F0E /* UIColor+Extensions.swift in Sources */,
+				4DFE39C51CF6FBA000996F0E /* NSMutableAttributeString+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
