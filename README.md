@@ -12,7 +12,10 @@ A collection of UIKit, Foundation and other framework extensions that I usually 
 ### Contents
 
 - [Utilities](#utilities)
-- [Array](#array-extensions)
+- [Array Extensions](#array-extensions)
+- [Dictionary Extensions](#dictionary-extensions)
+- [UIColor Extensions](#uicolor-extensions)
+- [UIViewController Extensions](#uiviewcontroller-extensions)
 
 ## Utilities
 There's a bunch of utility properties accessible via the `App` struct.
@@ -62,6 +65,78 @@ Get all the indices where an object appears in the array
 var array = ["iPhone", "iPhone", "iPad", "iPhone"]
 print(array.indexesOf("iPhone")) // [0, 1, 3]
 print(array.indicesOf("iPad")) // [2]
+```
+
+## Dictionary Extensions
+
+Check if a `Dictionary` contains a key:
+
+```swift
+let dict = ["Hodor": "dead", "John Snow": "resurrected", "Stanis Baratheon": "dead"]
+dict.containsKey("Hodor") // true
+```
+
+## UIColor Extensions
+
+Convenience initialisers to work more easily with colors:
+
+```swift
+var blackColor = UIColor(hex: "#000", alpha: 1.0)     // black color
+    blackColor = UIColor(hex: "#000000", alpha: 1.0)  // black color too
+
+var whiteColor = UIColor(hex: "#FFF", alpha: 1.0)    // white color
+    whiteColor = UIColor(hex: "#FFFFFF", alpha: 1.0) // white color too
+    
+let rgbWhiteColor = UIColor(r: 255.0, g: 255.0, b: 255.0)                        // white color using RGB values from 0 to 255
+let rgbWhiteColorTransparent = UIColor(r: 255.0, g: 255.0, b: 255.0, alpha: 0.5) // alpha supported too
+```
+
+## UIViewController Extensions
+
+Get a reference to app's delegate:
+
+```swift
+override func viewDidLoad() {
+  super.viewDidLoad()
+  
+  let appDelegate = myVC.appDelegate as! AppDelegate
+
+}
+```
+Get a reference to the navigation bar if any:
+
+```swift
+override func viewDidLoad() {
+  super.viewDidLoad()
+  
+  self.navigationBar.tintColor = UIColor.blackColor()
+
+}
+```
+
+Get or set the navigation bar `titleView`:
+
+```swift
+override func viewDidLoad() {
+  super.viewDidLoad()
+  
+  self.titleView = UIImageView(image: UIImage(named: "logo))
+
+}
+```
+
+Easily present new view controllers or dismiss self:
+
+```swift
+override func viewDidLoad() {
+  super.viewDidLoad()
+  
+  let myVC = MyViewController()
+  
+  present(myVC)  // Presents myVC modally
+  self.dismiss() // Dismisses self
+  
+}
 ```
 
 ## Example
