@@ -10,6 +10,12 @@ import Foundation
 
 public struct App {
     
+    // MARK: - Private Properties
+    /// NSUserDefaults key for storing whether app has run before
+    private static let kATHExtensionsHasAppRunBeforeKey = "kATHExtensionsHasAppRunBefore"
+    
+    // MARK: - Public Properties
+    
     /// Returns an optional string containing `CFBundleDisplayName`
     public static var bundleDisplayName: String? {
         return NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleDisplayName") as? String
@@ -88,5 +94,43 @@ public struct App {
     /// A reference to the application delegate
     public static var delegate: UIApplicationDelegate? {
         return UIApplication.sharedApplication().delegate
+    }
+    
+    /// Returns a boolean indicating whether this is the first time ever
+    /// the app is running
+    public static var isFirstLaunch: Bool {
+        
+        let d = NSUserDefaults.standardUserDefaults()
+        
+        if d.boolForKey(kATHExtensionsHasAppRunBeforeKey) {
+            return false
+        } else {
+            d.setBool(true, forKey: kATHExtensionsHasAppRunBeforeKey)
+            d.synchronize()
+            return true
+        }
+        
+    }
+    
+    /// Returns a boolean indicating whether this is the first time ever
+    /// the current version of the app is running
+    public static var isFirstLaunchForCurrentVersion: Bool {
+        
+        guard let version = self.version else {
+            return true
+        }
+        
+        let d = NSUserDefaults.standardUserDefaults()
+        
+        let key = "\(kATHExtensionsHasAppRunBeforeKey)\(version)"
+        
+        if d.boolForKey(key) {
+            return false
+        } else {
+            d.setBool(true, forKey: key)
+            d.synchronize()
+            return true
+        }
+        
     }
 }
