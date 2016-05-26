@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/ATHExtensions.svg?style=flat)](http://cocoapods.org/pods/ATHExtensions)
 [![License](https://img.shields.io/cocoapods/l/ATHExtensions.svg?style=flat)](http://cocoapods.org/pods/ATHExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/ATHExtensions.svg?style=flat)](http://cocoapods.org/pods/ATHExtensions)
+[![Language](https://img.shields.io/badge/language-Swift%202.0%20/%202.1%20/%202.2-orange.svg)](https://developer.apple.com/swift/)
 
 [![Logo](misc/logo.png  "ATHExtensions")](/)
 
