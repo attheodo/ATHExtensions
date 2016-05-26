@@ -1,10 +1,17 @@
-![alt text] (https://raw.githubusercontent.com/attheodo/ATHExtensions/master/misc/logo.png "ATHExtensions")
 # ATHExtensions
 
 [![CI Status](http://img.shields.io/travis/attheodo/ATHExtensions.svg?style=flat)](https://travis-ci.org/attheodo/ATHExtensions)
 [![Version](https://img.shields.io/cocoapods/v/ATHExtensions.svg?style=flat)](http://cocoapods.org/pods/ATHExtensions)
 [![License](https://img.shields.io/cocoapods/l/ATHExtensions.svg?style=flat)](http://cocoapods.org/pods/ATHExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/ATHExtensions.svg?style=flat)](http://cocoapods.org/pods/ATHExtensions)
+
+![alt text] (https://raw.githubusercontent.com/attheodo/ATHExtensions/master/misc/logo.png "ATHExtensions")
+A collection of UIKit, Foundation and other framework extensions that I usually use in my projects. 
+
+### Contents
+
+- [The App `struct`](#the-app-struct)
+- [Array](#array-extensions)
 
 ## Example
 
