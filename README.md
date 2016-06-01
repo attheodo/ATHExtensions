@@ -14,8 +14,10 @@ A collection of UIKit, Foundation and other framework extensions that I usually 
 
 - [Utilities](#utilities)
 - [Array Extensions](#array-extensions)
+- [NSMutableAttributedString Extensions](#nsmutableattributestring-extensions)
 - [Dictionary Extensions](#dictionary-extensions)
 - [UIColor Extensions](#uicolor-extensions)
+- [UIView Extensions](#uiview-extensions)
 - [UIViewController Extensions](#uiviewcontroller-extensions)
 
 ## Utilities
@@ -68,6 +70,15 @@ print(array.indexesOf("iPhone")) // [0, 1, 3]
 print(array.indicesOf("iPad")) // [2]
 ```
 
+## NSMutableAttributedString Extensions
+
+Conveniently change the color of a substring which is part of an `NSMutableAttributedString`
+
+```swift
+let text = NSMutableAttributedString(string: "Hello I am a tomato!")
+text.setColorForString("tomato", color: UIColor.redColor())
+```
+
 ## Dictionary Extensions
 
 Check if a `Dictionary` contains a key:
@@ -90,6 +101,48 @@ var whiteColor = UIColor(hex: "#FFF", alpha: 1.0)    // white color
     
 let rgbWhiteColor = UIColor(r: 255.0, g: 255.0, b: 255.0)                        // white color using RGB values from 0 to 255
 let rgbWhiteColorTransparent = UIColor(r: 255.0, g: 255.0, b: 255.0, alpha: 0.5) // alpha supported too
+```
+
+## UIView Extensions
+
+UIView size and origin:
+
+```swift
+let view = UIView()
+print(view.x) // equal to view.frame.origin.x (also settable)
+print(view.y) // equal to view.frame.origin.y (also settable)
+print(view.width) // equal to view.frame.size.width (also settable)
+print(view.height) // equal to view.frame.size.height (also settable)
+print(view.leading // equal to view.frame.origin.x (also settable)
+print(view.trailing) // equal to view.frame.origin.x + view.width (also settable)
+print(view.top) // equal to view.frame.origin.y (also settable)
+print(view.bottom) // equal to view.frame.origin.y + view.heigh (also settable)
+```
+
+Add borders and rounder corners to `UIView`s:
+
+```swift
+let view = UIView()
+view.setCornerRadius(10.0) // changes view's corner raidus
+view.addBorderWithWidth(1.0, andColor: UIColor.blackColor()) // Adds a 1px black border color
+view.addTopBorderWithSize(1.0, andColor: UIColor.redColor()) // Adds a 1px red border on the top of the view
+view.addBottomBorderWithSize(1.0, andColor: UIColor.greenColor()) // Adds a 1px green border color on the bottom of the view
+view.addLeftBorderWithSize(1.0, andColor: UIColor.orangeColor()) // Adds a 1px orange color on the left of the view
+view.addRightBorderWithSize(1.0, andColor: UIColor.yellowColor()) // Adds a 1px yellow color on the right of the view
+```
+
+Fade in/out a `UIView`:
+
+```swift
+let view = UIView()
+view.alpha = 0
+view.fadeIn() // Fades the view in
+view.fadeOut() // Fades the view out
+
+// Or more customizable
+view.fadeIn(duration: 5, delay: 1) { animation in
+    print("animation ended!")
+}
 ```
 
 ## UIViewController Extensions
