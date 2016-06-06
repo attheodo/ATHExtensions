@@ -197,7 +197,7 @@ extension UIView {
      - parameter size: The width of the border line
      - parameter color: The color of the border line
     */
-    public func addBorderRight(size size: CGFloat, color: UIColor) {
+    public func addRightBorderWithSize(size size: CGFloat, andColor color: UIColor) {
         addBorder(x: self.frame.width - size, y: 0, width: size, height: self.frame.height, color: color)
     }
     
