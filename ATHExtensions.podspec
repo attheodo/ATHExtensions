@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version          = '1.0.0'
   s.summary          = 'A collection of useful extensions for Swift classes and utilities I use often in my projects'
   s.description      = <<-DESC
-A collection of useful extensions for Swift classes and utilities I use often in my projects
+Handy extensions for Array, Dictionary, UIColor, UIView, UIViewController and more. Gets updated with new awesomeness every once in a while.
                        DESC
 
   s.homepage         = 'https://github.com/attheodo/ATHExtensions'
